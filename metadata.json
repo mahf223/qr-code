@@ -1,0 +1,6 @@
+{
+  "name": "QR Studio Pro",
+  "description": "Advanced QR Code Generator platform with AI design assistance, vector & HD exports, dynamic QR tracking, custom branding, and template marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

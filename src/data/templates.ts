@@ -1,0 +1,220 @@
+import { QRTemplate } from '../types';
+
+export const PRESET_TEMPLATES: QRTemplate[] = [
+  {
+    id: 'restaurant-menu-luxury',
+    title: 'Luxury Dining & Wine Menu',
+    category: 'Restaurant',
+    description: 'Gold gradient QR code with classy rounded corners, fork & knife logo badge and "SCAN FOR MENU" bottom frame.',
+    previewColor: '#d4af37',
+    config: {
+      patternStyle: 'classy-rounded',
+      fgColor: '#b38728',
+      bgColor: '#121212',
+      isBgTransparent: false,
+      colorType: 'gradient',
+      gradientType: 'linear',
+      gradientColor2: '#f3e5ab',
+      gradientRotation: 45,
+      eyeFrameShape: 'rounded',
+      eyeDotShape: 'circle',
+      eyeFrameColor: '#f3e5ab',
+      eyeDotColor: '#d4af37',
+      useCustomEyeColor: true,
+      logoPreset: 'utensils',
+      logoSizeRatio: 0.22,
+      logoBgShape: 'circle',
+      logoBgColor: '#121212',
+      frameStyle: 'bottom-badge',
+      frameText: 'SCAN FOR MENU',
+      frameColor: '#b38728',
+      frameTextColor: '#ffffff',
+      errorCorrectionLevel: 'H'
+    },
+    samplePayload: {
+      type: 'url',
+      data: { url: 'https://bistro-luxe.com/dinner-menu.pdf' }
+    }
+  },
+  {
+    id: 'wifi-guest-pass',
+    title: 'High-Speed Wi-Fi Guest Pass',
+    category: 'Tech',
+    description: 'Cyan neon gradient QR with Wi-Fi icon badge and top "CONNECT WI-FI" badge frame.',
+    previewColor: '#00f2fe',
+    config: {
+      patternStyle: 'dots',
+      fgColor: '#00c6ff',
+      bgColor: '#0f172a',
+      isBgTransparent: false,
+      colorType: 'gradient',
+      gradientType: 'linear',
+      gradientColor2: '#0072ff',
+      gradientRotation: 90,
+      eyeFrameShape: 'drop',
+      eyeDotShape: 'diamond',
+      eyeFrameColor: '#00f2fe',
+      eyeDotColor: '#ffffff',
+      useCustomEyeColor: true,
+      logoPreset: 'wifi',
+      logoSizeRatio: 0.24,
+      logoBgShape: 'circle',
+      logoBgColor: '#0f172a',
+      frameStyle: 'top-badge',
+      frameText: 'FREE HIGH-SPEED WI-FI',
+      frameColor: '#0072ff',
+      frameTextColor: '#ffffff',
+      errorCorrectionLevel: 'H'
+    },
+    samplePayload: {
+      type: 'wifi',
+      data: { ssid: 'Guest_HighSpeed_5G', password: 'WelcomeGuest2026', encryption: 'WPA/WPA2', hidden: false }
+    }
+  },
+  {
+    id: 'nfc-business-card',
+    title: 'Executive vCard Pro',
+    category: 'Business',
+    description: 'Deep navy & royal sapphire design with business briefcase logo badge and clean card border.',
+    previewColor: '#1e3a8a',
+    config: {
+      patternStyle: 'extra-rounded',
+      fgColor: '#1e40af',
+      bgColor: '#ffffff',
+      isBgTransparent: false,
+      colorType: 'single',
+      eyeFrameShape: 'rounded',
+      eyeDotShape: 'rounded',
+      eyeFrameColor: '#1e3a8a',
+      eyeDotColor: '#3b82f6',
+      useCustomEyeColor: true,
+      logoPreset: 'vcard',
+      logoSizeRatio: 0.2,
+      logoBgShape: 'rounded',
+      logoBgColor: '#eff6ff',
+      frameStyle: 'card-border',
+      frameText: 'SAVE CONTACT',
+      frameColor: '#1e3a8a',
+      frameTextColor: '#1e3a8a',
+      errorCorrectionLevel: 'H'
+    },
+    samplePayload: {
+      type: 'vcard',
+      data: {
+        firstName: 'Alexander',
+        lastName: 'Wright',
+        organization: 'Apex Growth Labs',
+        title: 'Managing Director',
+        email: 'alex@apexgrowth.io',
+        phone: '+1 (555) 234-5678',
+        mobile: '+1 (555) 987-6543',
+        website: 'https://apexgrowth.io',
+        street: '100 Innovation Way',
+        city: 'San Francisco',
+        country: 'USA'
+      }
+    }
+  },
+  {
+    id: 'instagram-influencer',
+    title: 'Instagram & Social Connect',
+    category: 'Social',
+    description: 'Vibrant Instagram sunset gradient pattern with social camera icon and speech bubble CTA.',
+    previewColor: '#e1306c',
+    config: {
+      patternStyle: 'rounded',
+      fgColor: '#833ab4',
+      bgColor: '#ffffff',
+      isBgTransparent: false,
+      colorType: 'gradient',
+      gradientType: 'linear',
+      gradientColor2: '#fd1d1d',
+      gradientRotation: 135,
+      eyeFrameShape: 'leaf',
+      eyeDotShape: 'circle',
+      eyeFrameColor: '#e1306c',
+      eyeDotColor: '#fcaf45',
+      useCustomEyeColor: true,
+      logoPreset: 'instagram',
+      logoSizeRatio: 0.25,
+      logoBgShape: 'circle',
+      logoBgColor: '#ffffff',
+      frameStyle: 'speech-bubble',
+      frameText: 'FOLLOW ME ON IG',
+      frameColor: '#e1306c',
+      frameTextColor: '#ffffff',
+      errorCorrectionLevel: 'H'
+    },
+    samplePayload: {
+      type: 'social',
+      data: { platform: 'instagram', usernameOrUrl: 'creative_studio' }
+    }
+  },
+  {
+    id: 'real-estate-tour',
+    title: 'Real Estate Virtual Open House',
+    category: 'Marketing',
+    description: 'Sophisticated emerald green design with home location icon and bottom badge CTA for property listings.',
+    previewColor: '#059669',
+    config: {
+      patternStyle: 'square',
+      fgColor: '#047857',
+      bgColor: '#f0fdf4',
+      isBgTransparent: false,
+      colorType: 'single',
+      eyeFrameShape: 'square',
+      eyeDotShape: 'square',
+      eyeFrameColor: '#065f46',
+      eyeDotColor: '#10b981',
+      useCustomEyeColor: true,
+      logoPreset: 'home',
+      logoSizeRatio: 0.22,
+      logoBgShape: 'square',
+      logoBgColor: '#ffffff',
+      frameStyle: 'bottom-badge',
+      frameText: '3D VIRTUAL TOUR',
+      frameColor: '#047857',
+      frameTextColor: '#ffffff',
+      errorCorrectionLevel: 'H'
+    },
+    samplePayload: {
+      type: 'url',
+      data: { url: 'https://luxuryhomes.example/3d-walkthrough' }
+    }
+  },
+  {
+    id: 'payment-instant-checkout',
+    title: 'UPI & Multi-Crypto Payment Hub',
+    category: 'Business',
+    description: 'Trustworthy violet gradient QR with lock & payment shield logo badge for point-of-sale checkout.',
+    previewColor: '#7c3aed',
+    config: {
+      patternStyle: 'classy',
+      fgColor: '#6d28d9',
+      bgColor: '#ffffff',
+      isBgTransparent: false,
+      colorType: 'gradient',
+      gradientType: 'linear',
+      gradientColor2: '#4c1d95',
+      gradientRotation: 45,
+      eyeFrameShape: 'rounded',
+      eyeDotShape: 'circle',
+      eyeFrameColor: '#7c3aed',
+      eyeDotColor: '#a78bfa',
+      useCustomEyeColor: true,
+      logoPreset: 'payment',
+      logoSizeRatio: 0.22,
+      logoBgShape: 'circle',
+      logoBgColor: '#f5f3ff',
+      frameStyle: 'pill-badge',
+      frameText: 'SCAN TO PAY HERE',
+      frameColor: '#7c3aed',
+      frameTextColor: '#ffffff',
+      errorCorrectionLevel: 'H'
+    },
+    samplePayload: {
+      type: 'payment',
+      data: { method: 'upi', payeeId: 'store@upi', payeeName: 'Urban Coffee Co.', amount: '12.50', note: 'Order #4092' }
+    }
+  }
+];
